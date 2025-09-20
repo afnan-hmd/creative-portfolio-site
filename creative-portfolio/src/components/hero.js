@@ -13,7 +13,7 @@ const HeroSect = () => {
         <h1 className='text-8xl font-bold text-(--primary)'>raven</h1>
         <h2 className='text-6xl font-bold'>moonstone</h2>
         <p className='text-(--text)/75 py-4'>
-          I'm a freelance graphic designer specializing in brand identity, web design,
+          I&apos;m a freelance graphic designer specializing in brand identity, web design,
           and visual storytelling. With a passion for clean design and strategic thinking,
           I help businesses bring their ideas to life through impactful visuals.
         </p>
