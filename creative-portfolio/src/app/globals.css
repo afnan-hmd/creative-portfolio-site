@@ -44,3 +44,8 @@ body {
     --accent: #25378d;
   }
 }
+
+
+html {
+  scroll-behavior: smooth;
+}

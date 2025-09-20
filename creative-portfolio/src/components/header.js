@@ -1,30 +1,18 @@
 import React from 'react';
-import Link from 'next/link';
 import { Sun, Moon } from 'lucide-react';
+import NavLinks from './../utils/nav-links.js';
 
 export default function Header() {
-  const headerPages = [
-    "Home", "About", "Projects", "Contact"
-  ];
 
   return (
-    <div className="bg-(--primary) flex content-center items-center justify-between mx-auto p-4">
+    <div className="sticky top-0 bg-(--secondary)/85 flex content-center items-center justify-between mx-auto py-4 px-16">
       <div className="text-(--text) font-bold">
         Raven Moonstone
       </div>
 
       <nav>
         <ul className="flex justify-between content-center items-center gap-4 ">
-          {headerPages.map((page) => (
-            <li key={page}>
-              <Link
-                href="/"
-                className="text-(--text)"
-              >
-                {page}
-              </Link>
-            </li>
-          ))}
+          <NavLinks /> 
         </ul>
       </nav>
 

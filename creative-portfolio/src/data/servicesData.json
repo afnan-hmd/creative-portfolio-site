@@ -1,0 +1,29 @@
+{ 
+  "services": [ 
+    { 
+      "title": "Logo Design", 
+      "description": "Your logo is the face of your brand. I’ll work with you to create a unique, memorable, and versatile logo that reflects your brand’s personality." 
+    }, 
+    { 
+      "title": "Web Design", 
+      "description": "Need a sleek, user-friendly website? I specialize in modern, responsive web design that looks great on any device." 
+    }, 
+    { 
+      "title": "Branding & Identity", 
+      "description": "From color schemes to fonts, I’ll help you define a cohesive visual identity that resonates with your audience and elevates your brand."
+    }, 
+    { 
+      "title": "Print Design", 
+      "description": "Flyers, brochures, business cards—you name it. I create high-quality print materials that communicate your message effectively." 
+    }, 
+    { 
+      "title": "Social Media Graphics", 
+      "description": "Social media is all about grabbing attention. I design eye-catching graphics that will make your social media pages stand out." 
+    } 
+  ], 
+  "cta": { 
+    "text": "Learn More About My Services", 
+    "link": "/services" 
+  } 
+} 
+

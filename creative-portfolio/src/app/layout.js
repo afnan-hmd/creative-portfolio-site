@@ -1,15 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
+//import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { inter } from './../utils/fonts.js';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import Header from '../components/header.js';
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
+
 
 export const metadata = {
   title: "Creative Portfolio",
@@ -20,9 +16,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.className} antialiased`}
+        id='home'
       >
+
+        <Header />
         {children}
+
       </body>
     </html>
   );
