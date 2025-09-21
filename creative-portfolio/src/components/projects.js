@@ -1,25 +1,28 @@
+
 import Card from "./card";
 import sql from './../data/data.js';
 
-export default async function Service() {
-   let data
+
+
+export default async function Project() {
+  let data
 
   try {
-    data= await sql`SELECT * from services`
+    data= await sql`SELECT * from projects`
   } catch (error) {
     throw error
   }
 
-  const services= data;
+  const projects= data;
 
 
   return (
-    <div id='services' className="text-(--text) p-16 flex flex-col text-center">
-      <h3 className="text-2xl font-bold mb-1">Services</h3>
-      <p className="mb-4">description</p>
+    <div id='project' className="text-(--text) p-16 flex flex-col text-center">
+      <h3 className="text-2xl font-bold mb-1">Recent Projects</h3>
+      <p className="mb-4">projects description</p>
       <div>
         <div className="flex flex-row justify-center items-stretch content-center gap-4 flex-wrap">
-	        {services.map((item, index) => (
+	        {projects.map((item, index) => (
             <Card 
               key = {index}
               title = {item.title}
