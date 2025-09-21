@@ -1,6 +1,6 @@
 import React from 'react';
-import { Sun, Moon } from 'lucide-react';
 import NavLinks from './../utils/nav-links.js';
+import ThemeToggle from './themeToggle.js';
 
 export default function Header() {
 
@@ -17,9 +17,7 @@ export default function Header() {
       </nav>
 
       <div className='self-center'>
-        <button className='rounded-xl p-1 hover:bg-(--accent) active:bg-(--secondary)'>
-          <Sun color="white" size={30} />
-        </button>
+         <ThemeToggle></ThemeToggle>
       </div>
 
     </div>

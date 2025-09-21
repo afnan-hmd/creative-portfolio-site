@@ -3,8 +3,7 @@ import "./globals.css";
 import { inter } from './../utils/fonts.js';
 
 import Header from '../components/header.js';
-
-
+import ThemeProvider from './../utils/themeProvider.js';
 
 
 export const metadata = {
@@ -14,15 +13,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.className} antialiased`}
         id='home'
       >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+        >
+          <Header />
+          <main className='text-black dark:text-white'>{children}</main>
 
-        <Header />
-        {children}
-
+        </ThemeProvider>
       </body>
     </html>
   );
