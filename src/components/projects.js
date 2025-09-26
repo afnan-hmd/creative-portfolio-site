@@ -17,7 +17,7 @@ export default async function Project() {
 
 
   return (
-    <div id='project' className="text-(--text) p-16 flex flex-col text-center">
+    <div id='projects' className="text-(--text) p-16 flex flex-col text-center">
       <h3 className="text-2xl font-bold mb-1">Recent Projects</h3>
       <p className="mb-4">projects description</p>
       <div>
